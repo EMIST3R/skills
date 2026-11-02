@@ -22,12 +22,22 @@ Before shipping UI, apply **`emil-design-eng`** (motion, easing, press states, t
 ## Composition (landing / marketing pages)
 
 - **One composition** in the first viewport — not a dashboard.
-- **Brand first:** business name is a hero-level signal, not only nav text. Prefer the **logo** in the header when intake has a logo `localPath`.
-- **Hero budget:** brand, one headline, one short supporting sentence, **one primary CTA**, one dominant full-bleed image/background. No stats strips, schedule chips, address blocks, or promo stickers in the first viewport.
-- **No hero overlays:** no floating badges, pills, or callout boxes on hero media.
-- **Full-bleed hero** by default — not inset cards or side-panel media.
+- **Brand lockup:** header shows the **logo file** (intake logo `localPath`) plus the business name. Do not rely on a logo printed inside a photo, and do not use a text wordmark when a logo file exists.
+- **Hero copy is factual, not a slogan.** One line that says place, who it is for, what they do, and since-year when claimed. Examples of forbidden incentive lines: “One teacher. The whole course.”, “Unlock your potential.”, “Your journey starts here.”
+- **Hero budget:** logo + name, that one factual line, **one primary CTA**, and one image. No stats strips, schedule chips, address blocks, promo stickers, or floating badges in the hero.
+- **Readable type:** do not put the headline on a light gradient over a face or a busy pattern. If the photo has no quiet region, put type on a **solid panel** (split layout or a solid bottom band).
+- **First screen:** the hero may be tall, but the next section (what they offer) must begin in or just under the first viewport — not a full empty `100svh` of photo with facts only after scroll.
 - **Cards:** default no cards. Never in the hero. Cards only when they wrap a real interaction.
 - **One job per section:** one purpose, one headline, usually one short supporting sentence.
+
+## Hero image check
+
+Before using a photo as the hero:
+
+- Reject a centered portrait or a busy pattern that leaves no quiet region for type.
+- Prefer classroom, storefront, exterior, or a crop with open space.
+- If every candidate fails, use a solid panel for type and a smaller photo beside or below it.
+- Always ship the downloaded logo in the header. The photo is not the logo.
 
 ## CTA hierarchy (no redundancy)
 
@@ -64,6 +74,14 @@ Primary CTAs are call / LINE / contact — not generic “Learn more” alone. S
 - Facts must still be grounded in intake `claims[]` — but **rewrite** into clean marketing voice.
 - **Forbidden** in public copy: “Facebook post…”, “a flyer says…”, “Google listing…”, “Posts also say…”, “named on Facebook”, “from the school flyer” as source attribution, or any platform/source provenance.
 - Provenance stays in `claims[]`, `client-brief.md`, and client `AGENTS.md` / `conflicts[]` — never in visitor-facing descriptions.
+- Hero and section headlines state facts (who, where, what). They are not campaign slogans.
+
+## Locales
+
+- If intake `business.languages` has two or more codes (the source site had a language switch or parallel copy), scaffold a **header language control**.
+- Each public string is **one language**. Do not mix Thai and English in the same sentence or button.
+- Ship only languages present in intake. Do not invent translations.
+- Default locale is the language the source site leads with (often `th` for a Thai business site that also has English).
 
 ## Motion
 
