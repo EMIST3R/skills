@@ -9,6 +9,9 @@ description: >-
 
 # Local web design (marketing sites)
 
+Public source of truth: https://github.com/EMIST3R/skills/tree/main/skills/local-web-design  
+Also mirrored for a dedicated repo: https://github.com/emist3r/local-web-design-skill (when published).
+
 ## Also load
 
 Before shipping UI, apply **`emil-design-eng`** (motion, easing, press states, taste) from https://github.com/EMIST3R/skills. For phone feel use **`mobile-native`**. After a pass, optionally **`break-ui`**.
@@ -42,4 +45,4 @@ Before shipping UI, apply **`emil-design-eng`** (motion, easing, press states, t
 
 ## Output
 
-Implement in the client Next.js app. Keep marketing copy tied to intake claims only.
+Implement in the client Next.js app under `clients/{slug}/`. Keep marketing copy tied to intake claims only.
